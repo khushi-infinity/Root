@@ -1,0 +1,3 @@
+class: TestMinimal
+fields:
+  name: String

@@ -1,0 +1,20 @@
+# Resource state model tracking player resources.
+class: ResourceState
+
+# Add the table key, if this class represents a row in the database.
+#table: resource_state
+
+# The fields (and columns if connected to the database) of the class.
+# For a list of supported types, please see the documentation.
+# https://docs.serverpod.dev/concepts/working-with-endpoints
+fields:
+  ### Amount of wood the player has.
+  wood: int
+  ### Amount of stone the player has.
+  stone: int
+  ### Amount of seeds the player has.
+  seeds: int
+  ### Amount of wheat the player has.
+  wheat: int
+  ### Amount of coins the player has.
+  coins: int

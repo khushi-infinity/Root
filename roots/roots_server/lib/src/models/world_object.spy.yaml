@@ -1,0 +1,44 @@
+# World object model representing placed structures, crops, and resources.
+class: WorldObject
+
+# Add the table key, if this class represents a row in the database.
+#table: world_object
+
+# The fields (and columns if connected to the database) of the class.
+# For a list of supported types, please see the documentation.
+# https://docs.serverpod.dev/concepts/working-with-endpoints
+fields:
+  ### Unique identifier for the world object.
+  id: String
+  ### The world this object belongs to.
+  worldId: String
+  ### The owner of this object, if any.
+  ownerId: String
+  ### Type of object (farmhouse, field, fence, path, well, crop, etc.).
+  type: String
+  ### X position in the world.
+  positionX: double
+  ### Y position in the world.
+  positionY: double
+  ### Z position in the world.
+  z: double
+  ### Rotation around Y axis.
+  rotationY: double
+  ### X scale.
+  scaleX: double
+  ### Y scale.
+  scaleY: double
+  ### Z scale.
+  scaleZ: double
+  ### Additional state for the object (e.g., crop stage).
+  state: String
+  ### Crop growth stage (for crops).
+  cropStage: int
+  ### Whether the crop has been watered this cycle.
+  misWatered: bool
+  ### When the crop was planted.
+  plantedAt: DateTime
+  ### When the object was created.
+  createdAt: DateTime
+  ### When the object was last updated.
+  updatedAt: DateTime

@@ -1,0 +1,18 @@
+# World event model for real-time streaming of world changes.
+class: WorldEvent
+
+# Add the table key, if this class represents a row in the database.
+#table: world_event
+
+# The fields (and columns if connected to the database) of the class.
+# For a list of supported types, please see the documentation.
+# https://docs.serverpod.dev/concepts/working-with-endpoints
+fields:
+  ### The type of event.
+  eventKind: String
+  ### The world this event belongs to.
+  worldId: String
+  ### Additional event data.
+  data: String
+  ### When the event was created.
+  createdAt: DateTime

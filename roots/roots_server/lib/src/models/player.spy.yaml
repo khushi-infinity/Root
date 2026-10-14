@@ -1,0 +1,24 @@
+# Player model representing a connected client.
+class: Player
+
+# Add the table key, if this class represents a row in the database.
+#table: player
+
+# The fields (and columns if connected to the database) of the class.
+# For a list of supported types, please see the documentation.
+# https://docs.serverpod.dev/concepts/working-with-endpoints
+fields:
+  ### Unique identifier for the player.
+  id: String
+  ### The world this player belongs to.
+  worldId: String
+  ### Display name of the player.
+  displayName: String
+  ### X position in the world.
+  x: double
+  ### Y position in the world.
+  y: double
+  ### Z position in the world.
+  z: double
+  ### When the player was last seen.
+  lastSeenAt: DateTime

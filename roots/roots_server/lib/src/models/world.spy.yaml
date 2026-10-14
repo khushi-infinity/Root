@@ -1,0 +1,24 @@
+# World model representing the shared farm world.
+class: World
+
+# Add the table key, if this class represents a row in the database.
+#table: world
+
+# The fields (and columns if connected to the database) of the class.
+# For a list of supported types, please see the documentation.
+# https://docs.serverpod.dev/concepts/working-with-endpoints
+fields:
+  ### Unique identifier for the world.
+  id: String
+  ### Name of the world.
+  name: String
+  ### Life score representing world vitality.
+  life: int
+  ### Current day time.
+  dayTime: String
+  ### Current weather state.
+  weather: String
+  ### When the world was created.
+  createdAt: DateTime
+  ### When the world was last updated.
+  updatedAt: DateTime

@@ -1,0 +1,29 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+greeting:
+  - hello:
+crop:
+  - plantCrop:
+  - waterCrop:
+  - harvestCrop:
+  - updateCropStage:
+resource:
+  - resourceChanged:
+world:
+  - getOrCreateDemoWorld:
+  - getWorldSnapshot:
+  - joinDemoWorld:
+  - resetDemoWorld:
+worldObject:
+  - placeWorldObject:
+  - removeWorldObject:
+  - updateWorldObject:
